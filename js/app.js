@@ -43,7 +43,7 @@ const botonCerrar = () => {
   cerrarMenu(btnCerrar, overlay);
 };
 
-const observer = new IntersectionObserver((entries, observer) => {
+/*const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       const imagen = entry.target;
@@ -55,7 +55,7 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 imagenes.forEach((imagen) => {
   observer.observe(imagen);
-});
+});*/
 
 const cerrarMenu = (boton, overlay) => {
   boton.addEventListener("click", () => {
