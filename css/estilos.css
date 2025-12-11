@@ -216,11 +216,13 @@ img {
 @media (min-width: 768px) {
   .texto-encabezado h2 {
     font-size: 8rem;
+    margin-top: 80px;
   }
 }
 @media (min-width: 320px) {
   .texto-encabezado h2 {
     text-align: center;
+    margin-top: 80px;
   }
 }
 video {
@@ -449,9 +451,14 @@ video {
   transition: transform 0.25s;
 }
 .imagen-chef:hover {
+  filter: saturate(180%);
+}
+
+/*.imagen-chef:hover {
   --escala: 1.1;
   cursor: pointer;
-}
+}*/
+
 .texto-chef h3 {
   font-size: 3rem;
 }

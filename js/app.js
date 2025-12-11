@@ -135,3 +135,10 @@ const limpiarHtml = (contenedor) => {
     contenedor.removeChild(contenedor.firstChild);
   }
 };
+
+// Aparecer suavemente las imágenes cuando se cargan
+document.querySelectorAll('.box-img img').forEach(img => {
+  img.addEventListener('load', () => {
+    img.classList.add('loaded');
+  });
+});
