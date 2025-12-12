@@ -15,6 +15,12 @@ const contenedorPlatillos = document.querySelector(".platillos");
 document.addEventListener("DOMContentLoaded", () => {
   eventos();
   platillos();
+
+  // Actualizar año del footer automáticamente
+  const footer = document.querySelector(".footer p");
+  const añoActual = new Date().getFullYear();
+  footer.textContent = `Todos los derechos reservados © ${añoActual} Sabores Mágicos`;
+
 });
 
 const eventos = () => {

@@ -1,6 +1,15 @@
 /*Formulario contacto*/
 .formulario-contacto{
+    margin-top: 2rem;
     padding-top: 5rem;
+  
+  background-image: url('..//assets/img/body3.webp');
+  background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat; 
+  font-size: 1.6rem;
+  overflow-x: hidden;
+
 }
 
 @media(min-width: 768px) {
