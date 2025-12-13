@@ -119,6 +119,7 @@ img {
 .btn-verde:hover {
   background-color: var(--rojo);
 }
+
 /*encabezado*/
 .contenedor-navegacion {
   width: 100%;
@@ -186,7 +187,8 @@ img {
   height: 0.5rem;
   margin-bottom: 0.5rem;
 }
-/*video*/
+
+/*video + texto*/
 .contenido-header {
   position: relative;
 }
@@ -243,6 +245,7 @@ video {
   width: 100%;
   height: 100%;
 }
+
 /*sobre nosotros*/
 .contenedor-nosotros {
   padding-top: 5rem;
@@ -305,70 +308,54 @@ video {
 .imagenes2 img {
   margin-bottom: 1rem;
 }
+
+/* Platillos */
 .menu {
   padding-top: 4rem;
 }
-/*platillos*/
 .texto-platillos {
   text-align: center;
   font-size: 5rem;
 }
+
 @media (min-width: 768px) {
-  .platillos {
+  .platillos,
+  .platillosf {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 }
-.platillo {
+
+.platillo,
+.platillof {
   background-color: rgb(230, 183, 130);
   flex: 0 0 calc(33.3% - 1rem);
   border: 1px solid #e1e1e1;
   padding: 2rem;
   border-radius: 5px;
-}
-.platillo h2 {
-  text-align: center;
-}
-.platillo p {
-  font-size: 1.8rem;
-}
-.platillo {
   transform: scale(var(--escala, 1));
   transition: transform 0.25s;
 }
-.platillo:hover {
+
+.platillo:hover,
+.platillof:hover {
   --escala: 0.9;
   cursor: pointer;
 }
-@media (min-width: 768px) {
-  .platillossf {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-}
-.platillosf {
-  background-color: rgb(230, 183, 130);
-  flex: 0 0 calc(33.3% - 1rem);
-  border: 1px solid #e1e1e1;
-  padding: 2rem;
-  border-radius: 5px;
-}
-.platillosf h2 {
+
+.platillo h2,
+.platillof h2 {
   text-align: center;
 }
-.platillosf p {
+
+.platillo p,
+.platillof p {
   font-size: 1.8rem;
+  text-align: center;
 }
-.platillosf {
-  transform: scale(var(--escala, 1));
-  transition: transform 0.25s;
-}
-.platillosf:hover {
-  --escala: 0.9;
-  cursor: pointer;
-}
+
+/* Precio */
 .precio {
   display: flex;
   justify-content: space-between;
@@ -385,28 +372,64 @@ video {
   color: var(--blanco);
   height: 3.8rem;
 }
+
+/* Boton activo */
+button.activo {
+  background-color: var(--rojo);
+  color: #fff;
+}
+
+/* Botones de filtrado de platillos */
+.botones-platillos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.botones-platillos button{
+    flex: 0 0 calc(50% - 1rem);
+    padding: 1rem 3rem;
+}
+@media(min-width: 768px) {
+    .botones-platillos{
+        display: inline-block;
+    }
+    .botones-platillos button{
+        flex: unset;
+    }
+}
+
+/*.platillo img:hover {
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #ff9c3f;
+    -webkit-box-shadow: 0px 0px 15px 15px #ff9c3f;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}*/
+
+/* Separadores */
+.separador,
+.separador-Be {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+}
+
 .separador {
   background-image: url("../assets/img/platillos.webp");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 2;
 }
-.separador:hover {
-  filter: saturate(180%);
-}
+
 .separador-Be {
   background-image: url("../assets/img/bebidas00.webp");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 2;
 }
+
+.separador:hover,
 .separador-Be:hover {
   filter: saturate(180%);
 }
+
 .separador::before {
   content: "";
   position: absolute;
@@ -425,23 +448,26 @@ video {
   color: var(--blanco);
   text-align: center;
 }
-@media (min-width: 768px) {
-  .contenido-separador h2 {
-    text-align: left;
-    font-size: 5rem;
-    color: var(--blanco);
-  }
-}
+
 .contenido-separador p {
   color: var(--blanco);
   font-size: 3rem;
   text-align: center;
 }
+
 @media (min-width: 768px) {
+  
+  .contenido-separador h2 {
+    text-align: left;
+    font-size: 5rem;
+    color: var(--blanco);
+  }
+
   .contenido-separador p {
     text-align: left;
   }
 }
+
 /*seccion del chef*/
 .chef h2 {
   background-color: var(--rojo);
@@ -479,6 +505,129 @@ video {
 .texto-chef p {
   font-size: 2rem;
 }
+
+/* Sección Galería */
+.chef {
+    padding-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .container-img {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.box-img {
+    background-color: #ff9c3f;
+    flex: 0 0 calc(33.3% - 1rem);
+    border: 10px solid bisque;
+    padding: 2rem;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+/* Imágenes con aparición suave */
+.box-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.box-img img.loaded {
+    opacity: 1;
+}
+
+/*Formulario contacto*/
+.formulario-contacto{
+    margin-top: 2rem;
+    padding-top: 5rem;
+  
+  background-image: url('..//assets/img/body3.webp');
+  background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat; 
+  font-size: 1.6rem;
+  overflow-x: hidden;
+
+}
+
+@media(min-width: 768px) {
+    .formulario-contacto{
+        display: flex;
+    }
+}
+.informacion-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacion-contacto, .formulario{
+    flex: 0 0 calc(50% - 1rem);
+}
+.informacion-contacto{
+    background-color: var(--oscuro);
+    padding: 2rem;
+}
+
+.informacion-contacto h3, .informacion-contacto p, .redes-sociales i{
+    color: var(--blanco);
+}
+.informacion-contacto h3{
+    font-size: 4rem;
+    font-family: var(--titulos);
+}
+
+.informacion-contacto p{
+    font-size: 2.2rem;
+  
+}
+.informacion-contacto i{
+    margin-right: 1rem;
+}
+
+.redes-sociales{
+    font-size: 3rem;
+}
+
+.formulario{
+    padding: 5rem;
+}
+
+.input-formulario label{
+    display: block;
+    font-size: 2rem;
+    font-family: var(--parrafos);
+    margin-bottom: 1.5rem;
+}
+
+.input-formulario input, .input-formulario textarea{
+    width: 100%;
+}
+.input-formulario input, .input-formulario textarea{
+    padding: 1rem 1.6rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    outline: none;
+    font-family: var(--parrafos);
+}
+.input-formulario textarea{
+    height: 20rem;
+    resize:none;
+}
+
+/* Footer - reserva - contacto */
 .pie-pagina {
   margin-top: 5rem;
   background-color: rgb(20, 20, 20);

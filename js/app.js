@@ -96,3 +96,14 @@ const mostrarPlatillos = (entradas, piqueos, principales, postres, refrescos, ju
   btnCocteles.addEventListener("click", () => mostrar(cocteles));
   btnTodos.addEventListener("click", () => mostrar(todos));
 };
+
+//botón activo en filtros de platillos
+const botonesFiltros = document.querySelectorAll(".botones-platillos button");
+
+botonesFiltros.forEach(boton => {
+  boton.addEventListener("click", () => {
+    botonesFiltros.forEach(b => b.classList.remove("activo"));
+    boton.classList.add("activo");
+  });
+});
+
