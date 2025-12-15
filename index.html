@@ -126,7 +126,6 @@
       </div>
     </div>
 
-    
     <!-- Seccion visitanos -->
     <section class="chef contenedor">
       <h2>¡Visitanos!</h2>
@@ -523,14 +522,18 @@
         ></iframe>
       </div>
 
-      <form class="formulario" method="post">
+      <form class="formulario" id="form-reservas" method="post">
         <div class="input-formulario">
           <label for="nombre">Nombres</label>
           <input type="text" placeholder="Nombres" id="nombre-reserva" />
         </div>
         <div class="input-formulario">
           <label for="correo">Email</label>
-          <input type="email" placeholder="ejemplo@ejemplo.com" id="correo-reserva" />
+          <input
+            type="email"
+            placeholder="ejemplo@ejemplo.com"
+            id="correo-reserva"
+          />
         </div>
         <div class="input-formulario">
           <label for="telefono">Teléfono</label>
@@ -538,19 +541,19 @@
         </div>
         <div class="input-formulario">
           <label for="date">Fecha:</label>
-          <input type="date" id="date-reserva" name="date" required />
+          <input type="date" id="fecha-reserva" name="date" required />
         </div>
         <div class="input-formulario">
           <label for="time">Hora:</label>
-          <input type="time" id="time-reserva" name="time" required />
+          <input type="time" id="hora-reserva" name="time" required />
         </div>
         <div class="input-formulario">
           <label for="guests">Número de Invitados:</label>
-          <input type="number" id="guests-reserva" name="guests" required />
+          <input type="number" id="invitado-reserva" name="guests" required />
         </div>
         <div class="input-formulario">
           <label for="mensaje">Mensaje</label>
-          <textarea></textarea>
+          <textarea id="mensaje-reserva" required></textarea>
         </div>
         <div class="btn-formulario">
           <input type="submit" class="btn btn-verde" value="Enviar" />
@@ -580,10 +583,16 @@
         </div>
       </div>
 
-      <form class="formulario" method="post">
+      <form class="formulario" id="form-contacto" method="post">
         <div class="input-formulario">
           <label for="nombre">Nombres</label>
-          <input type="text" placeholder="Nombres" id="nombre-contacto" />
+          <input
+            type="text"
+            placeholder="Nombres"
+            id="nombre-contacto"
+            name="names"
+            required
+          />
         </div>
         <div class="input-formulario">
           <label for="apellidos">Apellidos</label>
@@ -591,7 +600,13 @@
         </div>
         <div class="input-formulario">
           <label for="correo">Correo</label>
-          <input type="email" placeholder="ejemplo@ejemplo.com" id="correo-contacto" />
+          <input
+            type="email"
+            placeholder="ejemplo@ejemplo.com"
+            id="correo-contacto"
+            name="email"
+            required
+          />
         </div>
         <div class="input-formulario">
           <label for="telefono">Teléfono</label>
@@ -599,7 +614,7 @@
         </div>
         <div class="input-formulario">
           <label for="mensaje">Mensaje</label>
-          <textarea></textarea>
+          <textarea id="mensaje-contacto" required></textarea>
         </div>
         <div class="btn-formulario">
           <input type="submit" class="btn btn-verde" value="Enviar" />
