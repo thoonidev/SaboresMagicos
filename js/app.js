@@ -12,6 +12,7 @@ const btnCocteles = document.querySelector(".cocteles");
 const contenedorPlatillos = document.querySelector(".platillos");
 const imagenes = document.querySelectorAll(".box-img img");
 
+// Eventos
 document.addEventListener("DOMContentLoaded", () => {
   eventos();
   platillos();
@@ -30,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// Funciones
 const eventos = () => {
   menu.addEventListener("click", abrirMenu);
 };
@@ -39,6 +41,7 @@ const abrirMenu = () => {
   botonCerrar();
 };
 
+// Botón para cerrar menú
 const botonCerrar = () => {
   if (document.querySelector(".pantalla-completa")) return;
 
@@ -54,6 +57,7 @@ const botonCerrar = () => {
   cerrarMenu(btnCerrar, overlay);
 };
 
+// Cerrar menú
 const cerrarMenu = (boton, overlay) => {
   const cerrar = () => {
     navegacion.classList.add("ocultar");
@@ -65,6 +69,7 @@ const cerrarMenu = (boton, overlay) => {
   overlay.addEventListener("click", cerrar);
 };
 
+// Filtrar platillos
 const platillos = () => {
   const platillosArreglo = Array.from(document.querySelectorAll(".platillo"));
 
@@ -102,6 +107,7 @@ const platillos = () => {
   );
 };
 
+// Mostrar platillos filtrados
 const mostrarPlatillos = (
   entradas,
   piqueos,
@@ -139,6 +145,7 @@ botonesFiltros.forEach((boton) => {
   });
 });
 
+// Validación de formulario de reservas
 const formReservas = document.querySelector("#form-reservas");
 
 formReservas.addEventListener("submit", (e) => {
@@ -150,7 +157,7 @@ formReservas.addEventListener("submit", (e) => {
   const fecha = document.querySelector("#fecha-reserva").value;
   const hora = document.querySelector("#hora-reserva").value;
   const invitados = document.querySelector("#invitado-reserva").value;
-
+  // Validar campos vacíos
   if (
     nombre === "" ||
     correo === "" ||
@@ -162,12 +169,12 @@ formReservas.addEventListener("submit", (e) => {
     alert("⚠️ Todos los campos de la reserva son obligatorios");
     return;
   }
-
+  // Validar email
   if (!validarEmail(correo)) {
     alert("❌ Email no válido");
     return;
   }
-
+  // Validar teléfono
   if (!validarTelefono(telefono)) {
     alert("❌ El teléfono debe tener 9 dígitos");
     return;
@@ -177,6 +184,7 @@ formReservas.addEventListener("submit", (e) => {
   formReservas.reset();
 });
 
+// Validación de formulario de contacto
 const formContacto = document.querySelector("#form-contacto");
 
 formContacto.addEventListener("submit", (e) => {
@@ -186,17 +194,17 @@ formContacto.addEventListener("submit", (e) => {
   const apellidos = document.querySelector("#apellidos-contacto").value.trim();
   const correo = document.querySelector("#correo-contacto").value.trim();
   const telefono = document.querySelector("#telefono-contacto").value.trim();
-
+  // Validar campos vacíos
   if (nombre === "" || apellidos === "" || correo === "" || telefono === "") {
     alert("⚠️ Todos los campos de contacto son obligatorios");
     return;
   }
-
+  // Validar email
   if (!validarEmail(correo)) {
     alert("❌ Email no válido");
     return;
   }
-
+  // Validar teléfono
   if (!validarTelefono(telefono)) {
     alert("❌ El teléfono debe tener 9 dígitos");
     return;
@@ -206,11 +214,12 @@ formContacto.addEventListener("submit", (e) => {
   formContacto.reset();
 });
 
+// Funciones de validación
 function validarEmail(email) {
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return regex.test(email);
 }
-
+// Validar teléfono (9 dígitos)
 function validarTelefono(telefono) {
   const regex = /^[0-9]{9}$/;
   return regex.test(telefono);

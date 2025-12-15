@@ -1,3 +1,6 @@
+/************************************/
+/* Variables CSS y estilos globales */
+/***********************************/
 :root {
   --verde: #0daa3c;
   --blanco: #ffffff;
@@ -22,7 +25,7 @@ body {
 *::before {
   box-sizing: inherit;
 }
-/*globales*/
+
 .contenedor {
   max-width: 120rem;
   margin: 0 auto;
@@ -120,7 +123,9 @@ img {
   background-color: var(--rojo);
 }
 
-/*encabezado*/
+/*************/
+/* Navegacion */
+/*************/
 .contenedor-navegacion {
   width: 100%;
   background-color: var(--oscuro);
@@ -188,7 +193,9 @@ img {
   margin-bottom: 0.5rem;
 }
 
-/*video + texto*/
+/**************************/
+/* Seccion video - texto */
+/*************************/
 .contenido-header {
   position: relative;
 }
@@ -246,7 +253,9 @@ video {
   height: 100%;
 }
 
-/*sobre nosotros*/
+/************************************/
+/* Sobre nosotros - mision - vision */
+/***********************************/
 .contenedor-nosotros {
   padding-top: 5rem;
 }
@@ -309,7 +318,9 @@ video {
   margin-bottom: 1rem;
 }
 
-/* Platillos */
+/**********************/
+/* Seccion platillos */
+/*********************/
 .menu {
   padding-top: 4rem;
 }
@@ -355,7 +366,7 @@ video {
   text-align: center;
 }
 
-/* Precio */
+/* Precio - bton*/
 .precio {
   display: flex;
   justify-content: space-between;
@@ -373,13 +384,17 @@ video {
   height: 3.8rem;
 }
 
-/* Boton activo */
+/********************************/
+/* Boton activo en el filtrado */
+/*******************************/
 button.activo {
   background-color: var(--rojo);
   color: #fff;
 }
 
-/* Botones de filtrado de platillos */
+/************************************/
+/* Botones de filtrado en platillos */
+/***********************************/
 .botones-platillos {
   display: flex;
   flex-wrap: wrap;
@@ -407,7 +422,9 @@ button.activo {
     -webkit-transform: rotate(360deg);
 }*/
 
-/* Separadores */
+/************************************/
+/* Separdores - platillos - bebidas */
+/***********************************/
 .separador,
 .separador-Be {
   background-size: cover;
@@ -467,7 +484,9 @@ button.activo {
   }
 }
 
-/*seccion del chef*/
+/***************************/
+/* Seccion chef - galeria */
+/**************************/
 .chef h2 {
   background-color: var(--rojo);
   display: inline-block;
@@ -505,7 +524,9 @@ button.activo {
   font-size: 2rem;
 }
 
-/* Sección Galería */
+/*******************/
+/* Seccion galeria */
+/******************/
 .chef {
   padding-top: 4rem;
 }
@@ -546,12 +567,14 @@ button.activo {
   opacity: 1;
 }
 
-/*Formulario contacto*/
+/*********************************/
+/* Formulario contacto -reserva */
+/*******************************/
 .formulario-contacto {
   margin-top: 2rem;
   padding-top: 5rem;
 
-  background-image: url("..//assets/img/body3.webp");
+  background-image: url("..//assets/img/formulario.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -629,7 +652,9 @@ button.activo {
   resize: none;
 }
 
+/*********************************/
 /* Footer - reserva - contacto */
+/******************************/
 .pie-pagina {
   margin-top: 5rem;
   background-color: rgb(20, 20, 20);
