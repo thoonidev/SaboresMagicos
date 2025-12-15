@@ -9,11 +9,15 @@
   --titulos: "Bree Serif", serif;
   --parrafos: "Mulish", sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 html {
   box-sizing: border-box;
   /*1rem = 10px*/
   font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 body {
   background-color: bisque;
