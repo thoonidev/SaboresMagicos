@@ -58,7 +58,8 @@ El proyecto busca mejorar la experiencia del cliente y facilitar la interacción
 ---
 
 ## 📸 Vista del proyecto
-![project-1](https://github.com/user-attachments/assets/43e45033-5e97-49a7-927a-0c28df377bd7)
+
+<img width="728" height="370" alt="saboresMagicos" src="https://github.com/user-attachments/assets/9dfdc80e-1a6f-43de-a441-4307a23b4013" />
 
 ---
 
@@ -66,5 +67,3 @@ El proyecto busca mejorar la experiencia del cliente y facilitar la interacción
 1. Clonar el repositorio:
    ```bash
    git clone https://github.com/thoonidev/SaboresMagicos.git
-
-
