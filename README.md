@@ -59,7 +59,7 @@ El proyecto busca mejorar la experiencia del cliente y facilitar la interacción
 
 ## 📸 Vista del proyecto
 
-<img width="728" height="370" alt="saboresMagicos" src="https://github.com/user-attachments/assets/9dfdc80e-1a6f-43de-a441-4307a23b4013" />
+<img width="728" height="370" alt="saboresMagicos" src="https://github.com/user-attachments/assets/013b8600-2219-4a95-8f46-11da199f2654" />
 
 ---
 
