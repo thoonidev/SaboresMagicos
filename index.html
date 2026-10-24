@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SABORES MAGICOS</title>
+    <script
+      src="https://kit.fontawesome.com/283335a286.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+  <body>
+    <header class="encabezado" id="inicio">
+      <div class="contenedor-navegacion">
+        <div class="contenido-navegacion contenedor">
+          <div class="logo">
+            <a href="#inicio"
+              ><h2>Sabores<span class="verde"> Mágicos</span></h2></a
+            >
+          </div>
+          <nav class="navegacion ocultar">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobrenosotros">Nosotros</a>
+            <a href="#platillos">Platillos</a>
+            <a href="#platillos">Bebidas</a>
+            <a href="#galeria">Galería</a>
+            <a href="#reservas">Reservas</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
+          <div class="hamburguesa"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+
+      <!-- Banner reserva - imagen -->
+      <div class="contenido-header">
+        <div class="contenedor-encabezado">
+          <div class="texto-encabezado">
+            <h2>Auténtica tradición</h2>
+            <a href="#reservas" class="btn bordes">Haz una reserva</a>
+          </div>
+          <img class="imagen-portada" src="assets/img/portada.webp" alt="" fetchpriority="high" width="1119" height="750" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Seccion bienvenida -->
+    <div class="contenedor-nosotros contenedor">
+      <div class="texto-nosotros">
+        <p class="bienvenida">Bienvenido a!</p>
+        <h1>Sabores Mágicos</h1>
+        <p style="text-align: justify">
+          "Estamos encantados de recibirlos y ofrecerles una experiencia
+          gastronómica excepcional. Nuestro amable personal está aquí para
+          atender todas sus necesidades y asegurarse de que su visita sea
+          inolvidable. Siéntense, relájense y disfruten de nuestros deliciosos
+          platos preparados con ingredientes frescos y de la más alta calidad.
+          ¡Esperamos que tengan una experiencia culinaria maravillosa con
+          nosotros!"
+        </p>
+        <a href="#sobrenosotros" class="btn btn-verde">Sobre Nosostros</a>
+      </div>
+      <div class="imagenes-nosotros">
+        <div class="imagen1">
+          <img src="assets/img/comida1.webp" alt="mujer comiendo pizza" loading="lazy" decoding="async" width="480" height="720" />
+        </div>
+        <div class="imagenes2">
+          <img src="assets/img/comida2.webp" alt="mujeres comiendo pizza" loading="lazy" decoding="async" width="720" height="480" />
+          <img src="assets/img/comida3.webp" alt="plato con pasta" loading="lazy" decoding="async" width="480" height="720" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Seccion te ofrecemos - cards -->
+    <section class="menu contenedor">
+      <h2 class="texto-platillos">Te ofrecemos</h2>
+      <div class="platillosf">
+        <div class="platillof" data-platillo="#">
+          <img src="assets/img/entrada.webp" alt="entrada" loading="lazy" decoding="async" width="600" height="400" />
+          <h2>Entradas</h2>
+          <p>Contamos con las mejores entradas.</p>
+          <div class="precio">
+            <p>Desde $25.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillof" data-platillo="#">
+          <img src="assets/img/principal.webp" alt="principal" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Platos principales</h2>
+          <p>Los mejores platos con guarniciones.</p>
+          <div class="precio">
+            <p>Desde $35.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillof" data-platillo="#">
+          <img src="assets/img/pb.webp" alt="pb" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Bebidas-Postres</h2>
+          <p>Variedad en postres y bebidas</p>
+          <div class="precio">
+            <p>Desde $15.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br /><br />
+
+    <!-- Banner nuestros platillos  -->
+    <div class="separador">
+      <div class="contenido-separador contenedor">
+        <h2>Tenemos la mejor variedad</h2>
+        <p>Prueba nuestras deliciosas creaciones culinarias</p>
+        <a href="#platillos" class="btn btn-verde">Nuestros Platillos</a>
+      </div>
+    </div>
+
+    <!-- Seccion visitanos -->
+    <section class="chef contenedor">
+      <h2>¡Visitanos!</h2>
+      <div class="contenido-chef">
+        <div class="texto-chef">
+          <h3>Celebra con nosotros</h3>
+          <p style="text-align: justify">
+            ¡En Sabores Mágicos pensamos en ti! 🥳 Ven a cualquiera de nuestros
+            locales y disfruta de las mejores platos y guarniciones a mitad de
+            precio. Celebra esa fecha especial para ti, acompañado del mejor
+            servicio y los mejores platillos que te puede ofrecer Flavor Fusion.
+            Nuestros clientes nos respaldan. ¡Te esperamos!🤩
+          </p>
+          <a href="#galeria" class="btn btn-verde">Nuestra Galería</a>
+        </div>
+        <div class="imagen-chef">
+          <img src="./assets/img/visitanos.webp" alt="fotografia del chef" loading="lazy" decoding="async" width="720" height="480" />
+        </div>
+      </div>
+    </section>
+    <br /><br />
+
+    <!-- Banner nuestros bebidas  -->
+    <div class="separador-Be">
+      <div class="contenido-separador contenedor">
+        <h2>La mejores bebidas</h2>
+        <p>Prueba y refrescate con nuestras bebidas</p>
+        <a href="#platillos" class="btn btn-verde">Nuestros Bebidas</a>
+      </div>
+    </div>
+
+    <!--Sobre Nosotros-->
+    <div class="contenedor-nosotros contenedor" id="sobrenosotros">
+      <div class="texto-nosotros">
+        <p class="bienvenida">Sobre Nosotros</p>
+        <h1>Sabores Mágicos</h1>
+        <p style="text-align: justify">
+          "En nuestro restaurante, hemos creado un espacio donde la pasión por
+          la comida se une con la creatividad y la hospitalidad. Desde nuestro
+          origen humilde hasta convertirnos en un lugar icónico, nos hemos
+          dedicado a ofrecer a nuestros comensales una experiencia gastronómica
+          única. Nuestro menú refleja una combinación de sabores auténticos y
+          platos innovadores, elaborados con ingredientes frescos y de origen
+          sostenible. Trabajamos de la mano con productores locales para apoyar
+          a nuestra comunidad y ofrecer lo mejor a nuestros clientes. Además,
+          nuestro equipo de servicio está comprometido en brindar un trato
+          cálido y profesional, asegurando que cada visita a nuestro restaurante
+          sea memorable. Te invitamos a unirte a nosotros y descubrir una nueva
+          dimensión de la buena comida y la hospitalidad excepcional."
+        </p>
+      </div>
+      <div class="imagenes-nosotros">
+        <div class="imagen1">
+          <img src="assets/img/n1.webp" alt="mujer comiendo pizza" loading="lazy" decoding="async" width="481" height="720" />
+        </div>
+        <div class="imagenes2">
+          <img src="assets/img/n2.webp" alt="mujeres comiendo pizza" loading="lazy" decoding="async" width="720" height="480" />
+          <img src="assets/img/n3.webp" alt="plato con pasta" loading="lazy" decoding="async" width="480" height="720" />
+        </div>
+      </div>
+    </div>
+    <br /><br />
+
+    <!-- Mision - Vision -->
+    <div class="contenedor-nosotros contenedor">
+      <div class="texto-nosotros">
+        <p class="bienvenida">Mision-Vision</p>
+        <h1>Sabores Mágicos</h1>
+        <p style="text-align: justify">
+          <strong>Misión:</strong> Ser reconocido como el restaurante líder en
+          brindar experiencias gastronómicas excepcionales, ofreciendo platos
+          deliciosos y servicio de primera calidad. Nuestra misión es deleitar a
+          nuestros comensales con una combinación única de sabores y crear un
+          ambiente acogedor donde puedan disfrutar de momentos inolvidables con
+          amigos y familiares.
+        </p>
+        <p style="text-align: justify">
+          <strong>Visión:</strong> Ser el destino gastronómico preferido de
+          nuestra comunidad, estableciendo una reputación sólida como el lugar
+          ideal para deleitar los paladares más exigentes. Buscamos
+          constantemente innovar y superar las expectativas de nuestros
+          clientes, ofreciendo menús variados y de alta calidad, respaldados por
+          un servicio excepcional y un entorno acogedor. Nuestra visión es
+          convertirnos en un referente de excelencia culinaria en nuestra área
+          geográfica.
+        </p>
+      </div>
+      <div class="imagenes-nosotros">
+        <div class="imagen1">
+          <img src="assets/img/n4.webp" alt="mujer comiendo pizza" loading="lazy" decoding="async" width="480" height="720" />
+        </div>
+        <div class="imagenes2">
+          <img src="assets/img/n5.webp" alt="mujeres comiendo pizza" loading="lazy" decoding="async" width="720" height="480" />
+          <img src="assets/img/n6.webp" alt="plato con pasta" loading="lazy" decoding="async" width="480" height="720" />
+        </div>
+      </div>
+    </div>
+
+    <!--Platillos-->
+    <section class="menu contenedor" id="platillos">
+      <h2 class="texto-platillos">Platillos - Bebidas</h2>
+      <div class="botones-platillos">
+        <button class="todos btn btn-verde">Todos</button>
+        <br />
+        <button class="entradas btn btn-verde">Entradas</button>
+        <button class="piqueos btn btn-verde">Piqueos</button>
+        <button class="principales btn btn-verde">Principales</button>
+        <button class="postres btn btn-verde">Postres</button>
+        <button class="refrescos btn btn-verde">Refrescos</button>
+        <button class="jugos btn btn-verde">Jugos</button>
+        <button class="vinos btn btn-verde">Vinos</button>
+        <button class="cocteles btn btn-verde">Cocteles</button>
+      </div>
+      <div class="platillos">
+        <div class="platillo" data-platillo="entrada">
+          <img src="assets/img/entrada1.webp" alt="entrada" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Bruschetta de tomate</h2>
+          <p>Pan tostado cubierta de tomate y mozzarella de búfala fresca.</p>
+          <div class="precio">
+            <p>$25.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="entrada">
+          <img src="assets/img/entrada2.webp" alt="entrada" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Carpaccio de res</h2>
+          <p>Láminas de carne de res marinadas en aceite de oliva y limón.</p>
+          <div class="precio">
+            <p>$25.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="entrada">
+          <img src="assets/img/entrada3.webp" alt="entrada" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Ceviche de langostinos</h2>
+          <p>Mezcla de limón con langostinos frescos marinados.</p>
+          <div class="precio">
+            <p>$25.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="piqueo">
+          <img src="assets/img/piqueo1.webp" alt="piqueo" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Empanadas de carne</h2>
+          <p>Empanadas rellenas de carne sazonada y jugosa.</p>
+          <div class="precio">
+            <p>$20.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="piqueo">
+          <img src="assets/img/piqueo2.webp" alt="piqueo" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Alitas de pollo</h2>
+          <p>Alitas cubiertas con salsa barbacoa.</p>
+          <div class="precio">
+            <p>$20.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="piqueo">
+          <img src="assets/img/piqueo3.webp" alt="piqueo" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Pinchos de camarón</h2>
+          <p>Camarones ensartados en brochetas a la parrilla.</p>
+          <div class="precio">
+            <p>$20.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="principal">
+          <img src="assets/img/principales1.webp" alt="principal" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Filete de ternera</h2>
+          <p>Filete en salsa de vino acompañado con un pure de patatas.</p>
+          <div class="precio">
+            <p>$35.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="principal">
+          <img src="assets/img/principales2.webp" alt="principal" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Salmón a la parrilla</h2>
+          <p>Salmón asado a la parrilla acompañado de espárragos.</p>
+          <div class="precio">
+            <p>$35.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="principal">
+          <img src="assets/img/principales3.webp" alt="principal" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Risotto de champiñones</h2>
+          <p>Risotto de arborio con champiñones silvestres salteados.</p>
+          <div class="precio">
+            <p>$35.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="postre">
+          <img src="assets/img/postre1.webp" alt="postre" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Tarta de chocolate</h2>
+          <p>Tarta crujiente acompañado de una salsa de frambuesa.</p>
+          <div class="precio">
+            <p>$15.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="postre">
+          <img src="assets/img/postre2.webp" alt="postre" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Crème brûlée de vainilla</h2>
+          <p>Crema de vainilla con una capa de caramelo crocante.</p>
+          <div class="precio">
+            <p>$15.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="postre">
+          <img src="assets/img/postre3.webp" alt="postre" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Profiteroles rellenos</h2>
+          <p>Pastelillo relleno de crema pastelera y bañado en chocolate.</p>
+          <div class="precio">
+            <p>$15.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="refresco">
+          <img src="assets/img/refresco1.webp" alt="refresco" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Limonada frozen</h2>
+          <p>Refrescante limón y granizada del hielo triturado.</p>
+          <div class="precio">
+            <p>$15.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="refresco">
+          <img src="assets/img/refresco2.webp" alt="refresco" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Té helado</h2>
+          <p>Combina el aroma del té con la frescura del hielo.</p>
+          <div class="precio">
+            <p>$15.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="refresco">
+          <img src="assets/img/refresco3.webp" alt="refresco" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Limonada de fresa</h2>
+          <p>Sabor refrescante del limón con la dulzura de las fresas.</p>
+          <div class="precio">
+            <p>$15.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="jugo">
+          <img src="assets/img/jugo1.webp" alt="jugo" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Jugo de mango</h2>
+          <p>Sabor dulce y jugoso.</p>
+          <div class="precio">
+            <p>$15.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="jugo">
+          <img src="assets/img/jugo2.webp" alt="jugo" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Jugo de piña</h2>
+          <p>Sabor ácido y dulce.</p>
+          <div class="precio">
+            <p>$15.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="jugo">
+          <img src="assets/img/jugo3.webp" alt="jugo" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Jugo de sandia</h2>
+          <p>Sabor dulce y refrescante.</p>
+          <div class="precio">
+            <p>$15.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="vino">
+          <img src="assets/img/vino1.webp" alt="vino" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Cabernet Sauvignon</h2>
+          <p>
+            Vino tinto que se caracteriza por sus sabores a frutas negras
+            maduras
+          </p>
+          <div class="precio">
+            <p>$25.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="vino">
+          <img src="assets/img/vino2.webp" alt="vino" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Chardonnay</h2>
+          <p>
+            Vino blanco de perfil aromático, que combina frutas como piña y
+            mango.
+          </p>
+          <div class="precio">
+            <p>$30.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="vino">
+          <img src="assets/img/vino3.webp" alt="vino" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Rosado de Garnacha</h2>
+          <p>Vino rosado de uva Garnacha ofrece sabores frescos y afrutados.</p>
+          <div class="precio">
+            <p>$35.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="coctel">
+          <img src="assets/img/coctel1.webp" alt="coctel" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Mojito</h2>
+          <p>
+            Combina ron blanco, azúcar, jugo de lima, hojas de menta fresca y
+            soda.
+          </p>
+          <div class="precio">
+            <p>$20.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="coctel">
+          <img src="assets/img/coctel2.webp" alt="coctel" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Margarita</h2>
+          <p>
+            Cóctel con base de tequila, jugo de lima y triple sec (licor de
+            naranja).
+          </p>
+          <div class="precio">
+            <p>$25.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+        <div class="platillo" data-platillo="coctel">
+          <img src="assets/img/coctel3.webp" alt="coctel" loading="lazy" decoding="async" width="720" height="480" />
+          <h2>Martini de manzana</h2>
+          <p>
+            Cóctel elegante que combina vodka, licor de manzana y jugo de limón.
+          </p>
+          <div class="precio">
+            <p>$20.0</p>
+            <button><i class="fas fa-shopping-basket"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Galeria-->
+    <section class="chef contenedor" id="galeria">
+      <h2>Galeria</h2>
+      <div class="container-img">
+        <div class="box-img">
+          <img src="assets/img/galeria1.webp" loading="lazy" alt="ensalada" decoding="async" width="720" height="481" />
+        </div>
+        <div class="box-img">
+          <img src="assets/img/galeria2.webp" loading="lazy" alt="ensalada" decoding="async" width="720" height="480" />
+        </div>
+        <div class="box-img">
+          <img src="assets/img/galeria3.webp" loading="lazy" alt="ensalada" decoding="async" width="720" height="480" />
+        </div>
+        <div class="box-img">
+          <img src="assets/img/galeria4.webp" loading="lazy" alt="ensalada" decoding="async" width="720" height="480" />
+        </div>
+        <div class="box-img">
+          <img src="assets/img/galeria5.webp" loading="lazy" alt="ensalada" decoding="async" width="720" height="480" />
+        </div>
+        <div class="box-img">
+          <img src="assets/img/galeria6.webp" loading="lazy" alt="ensalada" decoding="async" width="720" height="480" />
+        </div>
+      </div>
+    </section>
+
+    <!--Reserva-->
+    <div class="formulario-contacto contenedor" id="reservas">
+      <div class="informacion-contacto">
+        <h3>Reservas</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d35315.890108193365!2d-57.5904057829821!3d-25.322720631202518!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da8dd3a2b4e3b%3A0x96a6b30ec2a82c6f!2sSabores%20M%C3%A1gicos!5e0!3m2!1ses-419!2spe!4v1687364310017!5m2!1ses-419!2spe"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <form class="formulario" id="form-reservas" method="post">
+        <div class="input-formulario">
+          <label for="nombre">Nombres</label>
+          <input type="text" placeholder="Nombres" id="nombre-reserva" />
+        </div>
+        <div class="input-formulario">
+          <label for="correo">Email</label>
+          <input
+            type="email"
+            placeholder="ejemplo@ejemplo.com"
+            id="correo-reserva"
+          />
+        </div>
+        <div class="input-formulario">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" placeholder="+31123410921" id="telefono-reserva" />
+        </div>
+        <div class="input-formulario">
+          <label for="date">Fecha:</label>
+          <input type="date" id="fecha-reserva" name="date" required />
+        </div>
+        <div class="input-formulario">
+          <label for="time">Hora:</label>
+          <input type="time" id="hora-reserva" name="time" required />
+        </div>
+        <div class="input-formulario">
+          <label for="guests">Número de Invitados:</label>
+          <input type="number" id="invitado-reserva" name="guests" required />
+        </div>
+        <div class="input-formulario">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje-reserva" required></textarea>
+        </div>
+        <div class="btn-formulario">
+          <input type="submit" class="btn btn-verde" value="Enviar" />
+        </div>
+      </form>
+    </div>
+
+    <!--Contacto-->
+    <div class="formulario-contacto contenedor" id="contacto">
+      <div class="informacion-contacto">
+        <h3>Contactanos</h3>
+        <p>
+          <i class="fas fa-map-marker-alt"></i>Km5, Avda. Guaranies-Paraguay
+        </p>
+        <p><i class="fas fa-envelope"></i> SaboresMagicos@gmail.com</p>
+        <p><i class="fas fa-phone-alt"></i>+595 982 467429</p>
+        <div class="redes-sociales">
+          <a href="http://www.facebook.com" target="_blank"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="http://www.twitter.com" target="_blank"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
+          <a href="http://www.instagram.com" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+
+      <form class="formulario" id="form-contacto" method="post">
+        <div class="input-formulario">
+          <label for="nombre">Nombres</label>
+          <input
+            type="text"
+            placeholder="Nombres"
+            id="nombre-contacto"
+            name="names"
+            required
+          />
+        </div>
+        <div class="input-formulario">
+          <label for="apellidos">Apellidos</label>
+          <input type="text" placeholder="Apellidos" id="apellidos-contacto" />
+        </div>
+        <div class="input-formulario">
+          <label for="correo">Correo</label>
+          <input
+            type="email"
+            placeholder="ejemplo@ejemplo.com"
+            id="correo-contacto"
+            name="email"
+            required
+          />
+        </div>
+        <div class="input-formulario">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" placeholder="+31123410921" id="telefono-contacto" />
+        </div>
+        <div class="input-formulario">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje-contacto" required></textarea>
+        </div>
+        <div class="btn-formulario">
+          <input type="submit" class="btn btn-verde" value="Enviar" />
+        </div>
+      </form>
+    </div>
+
+    <!--Footer-->
+    <div class="pie-pagina">
+      <div class="contenedor-piepagina contenedor">
+        <div class="info">
+          <h3>Dirección</h3>
+          <p>Km5, Avda. Guaranies-Paraguay</p>
+        </div>
+        <div class="info">
+          <h3>Días especiales</h3>
+          <p>Sabados y Jueves 7am - 11pm</p>
+          <p>+361 982 467429</p>
+        </div>
+        <div class="info">
+          <h3>Horarios</h3>
+          <p>Lunes - Domingo 7am - 11pm</p>
+          <div class="redes-sociales redes-pie">
+            <a href="http://www.facebook.com" target="_blank"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a href="http://www.twitter.com" target="_blank"
+              ><i class="fab fa-twitter-square"></i
+            ></a>
+            <a href="http://www.instagram.com" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="info">
+          <h3>Noticias</h3>
+          <p>suscribete para recibir más noticias</p>
+          <input type="email" placeholder="Tu correo" />
+          <input type="submit" class="btn btn-verde" value="Suscribirse" />
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>Todos los derechos reservados &copy; Sabores Mágicos</p>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
